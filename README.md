@@ -20,7 +20,7 @@ pip install pandas scikit-learn
 ```
 
 1. Download `train.csv` and `test.csv` from the Kaggle competition page. The CSV files in this repository are empty placeholders.
-2. Change the two `pd.read_csv(...)` paths in `code.py` (inside the project folder) to where you saved them.
+2. Save them in the project folder, next to `code.py`, replacing the placeholders.
 3. Run `python code.py`.
 
 ## Results

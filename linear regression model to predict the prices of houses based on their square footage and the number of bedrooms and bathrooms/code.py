@@ -1,11 +1,14 @@
+import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
 # Load the train and test datasets
-train_data = pd.read_csv(r'C:\Users\joyal\Downloads\train.csv')
-test_data = pd.read_csv(r'C:\Users\joyal\Downloads\test.csv')
+# Download train.csv and test.csv from Kaggle and place them next to this script
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+train_data = pd.read_csv(os.path.join(BASE_DIR, 'train.csv'))
+test_data = pd.read_csv(os.path.join(BASE_DIR, 'test.csv'))
 
 # Extract relevant columns
 features = ['GrLivArea', 'BedroomAbvGr', 'FullBath', 'HalfBath']
